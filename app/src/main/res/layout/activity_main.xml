@@ -13,28 +13,33 @@
         android:padding="5dp">
 
 
-        <LinearLayout
+        <androidx.cardview.widget.CardView
+            android:id="@+id/password_button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_height="100dp"
+            app:cardBackgroundColor="#00897B"
+            app:cardCornerRadius="20dp">
 
-
-            <EditText
-                android:id="@+id/edit_text"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Enter Password" />
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
 
 
-            <TextView
-                android:id="@+id/text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="20dp"
-                android:text="Errors" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    style="@style/TextAppearance.Material3.TitleLarge"
+                    android:text="Password Checker"
+                    android:layout_gravity="center"
+                    android:gravity="center"/>
 
 
-        </LinearLayout>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
 
 
     </LinearLayout>

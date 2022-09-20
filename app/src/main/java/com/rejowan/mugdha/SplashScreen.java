@@ -35,7 +35,7 @@ public class SplashScreen extends AppCompatActivity {
 
 
                     if (i == 100) {
-                        Intent intent = new Intent(SplashScreen.this, PasswordChecker.class);
+                        Intent intent = new Intent(SplashScreen.this, MainActivity.class);
                         startActivity(intent);
                         finish();
                     }
